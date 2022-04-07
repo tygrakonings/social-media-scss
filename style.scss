@@ -1,0 +1,142 @@
+@import "./constants.scss";
+
+$translateSocials: 280px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0%;
+  top: 60%;
+}
+
+a {
+  @include textArea;
+}
+
+.blog {
+  text-align: left;
+  color: white;
+  font-weight: normal;
+  background-color: #e17b77;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  width: 270px;
+  transform: translateX($translateSocials);
+  transition: 1s;
+
+  &:hover {
+    transition: 1s;
+    width: 450px;
+  }
+}
+.blog::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5fc";
+  color: white;
+  background-color: #e17b77;
+  padding-right: 10px;
+  padding-left: 8px;
+}
+
+.twitter {
+  text-align: left;
+  color: white;
+  font-weight: normal;
+  background-color: #00aced;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  width: 270px;
+  transform: translateX($translateSocials);
+}
+
+.twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f099";
+  color: white;
+  background-color: #00aced;
+  padding: 10px;
+}
+
+.linkedin {
+  text-align: left;
+  color: white;
+  font-weight: normal;
+  background-color: #007bb6;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  width: 270px;
+  transform: translateX($translateSocials);
+}
+.linkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f0e1";
+  color: white;
+  background-color: #007bb6;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  transition: 2s;
+
+  .linkedin:hover {
+    width: 10px;
+    transition: 2s;
+  }
+}
+.facebook {
+  text-align: left;
+  color: white;
+  font-weight: normal;
+  background-color: #3b5998;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  width: 270px;
+  transform: translateX($translateSocials);
+}
+
+.facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f39e";
+  color: white;
+  background-color: #3b5998;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.github {
+  text-align: left;
+  color: white;
+  font-weight: normal;
+  background-color: black;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  width: 270px;
+  transform: translateX($translateSocials);
+}
+.github::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09b";
+  color: white;
+  background-color: black;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
